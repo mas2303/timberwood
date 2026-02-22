@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chauffage | Michel Seret - Chauffagiste</title>
+    <meta name="description" content="Installation et entretien de chaudières, radiateurs, chauffe-eau. Michel Seret, chauffagiste à Spa, Verviers, Malmedy et Saint-Vith.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #carouselChauffage { position: relative; }
+        #carouselChauffage .carousel-inner { position: relative; width: 100%; overflow: hidden; height: 380px; }
+        #carouselChauffage .carousel-item { display: none; position: relative; height: 100%; align-items: center; justify-content: center; background: #f3f4f6; }
+        #carouselChauffage .carousel-item.active { display: flex; }
+        #carouselChauffage .carousel-item img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: block; }
+        #carouselChauffage .carousel-indicators { position: absolute; bottom: 12px; left: 0; right: 0; list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 8px; z-index: 2; }
+        #carouselChauffage .carousel-indicators li { width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.6); cursor: pointer; border: none; }
+        #carouselChauffage .carousel-indicators li.active { background: #f97316; }
+        #carouselChauffage .carousel-control-prev, #carouselChauffage .carousel-control-next { position: absolute; top: 0; bottom: 0; width: 48px; display: flex; align-items: center; justify-content: center; color: #fff; background: rgba(0,0,0,0.3); z-index: 2; text-decoration: none; }
+        #carouselChauffage .carousel-control-prev { left: 0; }
+        #carouselChauffage .carousel-control-next { right: 0; }
+        #carouselChauffage .carousel-control-prev-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4V0z'/%3e%3c/svg%3e"); }
+        #carouselChauffage .carousel-control-next-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e"); }
+        #carouselChauffage .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    </style>
+</head>
+<body class="font-sans text-gray-900 bg-gray-50">
+
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-black shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+            <div class="flex items-center">
+                <a href="index.html" class="nav-logo-link">
+                    <img src="./image/logo.svg" alt="Michel Seret - Chauffagiste" class="nav-logo" />
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium text-white">
+                <a href="index.html" class="hover:text-yellow-500 transition">Accueil</a>
+                <a href="services.html" class="hover:text-yellow-500 transition">Services</a>
+                <a href="chauffage.html" class="text-yellow-500 font-bold">Chauffage</a>
+                <a href="toiture.html" class="hover:text-yellow-500 transition">Toiture</a>
+                <a href="apropos.html" class="hover:text-yellow-500 transition">À propos</a>
+                <a href="contact.html" class="hover:text-yellow-500 transition">Contact</a>
+            </div>
+            <div>
+                <a href="tel:+32495424115" class="bg-yellow-custom text-blue-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transition flex items-center text-sm md:text-base">
+                    <i class="fas fa-phone-alt mr-2"></i> 0495 42 41 15
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 gallery-item rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chauffage - Michel Seret" class="w-full h-full object-cover min-h-[320px]">
+            </div>
+            <div class="md:w-1/2">
+                <span class="text-yellow-600 font-bold text-sm uppercase tracking-widest">Confort & Énergie</span>
+                <h1 class="text-4xl md:text-5xl font-bold text-blue-900 mt-2 mb-6">Chauffage</h1>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    Pose de chaudière au gaz ou au mazout, radiateurs, chauffe-eau : conseil, devis et réalisation par un chauffagiste expérimenté.
+                </p>
+                <a href="contact.html" class="inline-block bg-yellow-custom text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-yellow-400 transition shadow-lg">
+                    <i class="fas fa-fire-alt mr-2"></i> Demander un devis
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pourquoi nous -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-blue-900 mb-4 uppercase tracking-tight">Pourquoi faire appel à Michel Seret ?</h2>
+        <div class="w-24 h-1 bg-yellow-500 mx-auto mb-12"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 card-hover">
+                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-tools text-2xl text-blue-900"></i>
+                </div>
+                <h3 class="text-xl font-bold text-blue-900 mb-2">Expertise reconnue</h3>
+                <p class="text-gray-600 text-sm">Années d'expérience en chauffage pour des installations durables et conformes.</p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 card-hover">
+                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-euro-sign text-2xl text-blue-900"></i>
+                </div>
+                <h3 class="text-xl font-bold text-blue-900 mb-2">Devis clair</h3>
+                <p class="text-gray-600 text-sm">Tarifs transparents, pas de mauvaises surprises. Devis détaillé avant tout engagement.</p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 card-hover">
+                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-handshake text-2xl text-blue-900"></i>
+                </div>
+                <h3 class="text-xl font-bold text-blue-900 mb-2">Proximité</h3>
+                <p class="text-gray-600 text-sm">Intervention à Spa, Verviers, Malmedy, Saint-Vith et environs. Réactivité et suivi personnalisé.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Prestations -->
+<section class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-blue-900 mb-6 uppercase tracking-tight">Chauffage</h2>
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex items-start"><i class="fas fa-check-circle text-yellow-500 mr-3 mt-1"></i> <strong>Chaudières</strong> — gaz, mazout, condensation</li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-yellow-500 mr-3 mt-1"></i> <strong>Radiateurs</strong> — pose, remplacement, purge</li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-yellow-500 mr-3 mt-1"></i> <strong>Chauffe-eau</strong> — électrique, gaz, entretien</li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-yellow-500 mr-3 mt-1"></i> <strong>Dépannage</strong> — intervention rapide en cas de panne</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-blue-900 mb-6 uppercase tracking-tight">Sanitaires & Confort</h2>
+                <ul class="space-y-3 text-gray-600">
+                    <li><i class="fas fa-caret-right text-yellow-500 mr-2"></i> Rénovation salle de bain</li>
+                    <li><i class="fas fa-caret-right text-yellow-500 mr-2"></i> Pose de sanitaires (lavabo, WC, douche, baignoire)</li>
+                    <li><i class="fas fa-caret-right text-yellow-500 mr-2"></i> Robinetterie et raccordements</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="py-16 bg-blue-900 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-4">Un projet chauffage ?</h2>
+        <p class="text-blue-200 mb-8">Michel Seret vous conseille et réalise l'étude et l'installation à Spa, Verviers, Malmedy et Saint-Vith.</p>
+        <a href="contact.html" class="inline-block bg-yellow-custom text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-yellow-400 transition shadow-lg">Demander un devis gratuit</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-blue-800 pb-12">
+        <div>
+            <a href="index.html" class="block mb-4"><img src="./image/logo.svg" alt="Michel Seret - Chauffagiste" class="h-10 w-auto max-w-[160px] object-contain" /></a>
+            <p class="text-blue-200">Chauffage et toiture au service de votre confort et de votre habitation.</p>
+            <div class="flex space-x-4 mt-6">
+                <a href="https://www.facebook.com/timberwood.be" target="_blank" rel="noopener noreferrer" class="text-blue-200 hover:text-yellow-500" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div class="footer-zone">
+            <h4 class="text-lg font-bold">Zone d'intervention</h4>
+            <p class="footer-zone-subtitle">Province de Liège</p>
+            <div class="footer-zone-tags">
+                <span>Verviers</span>
+                <span>Pepinster</span>
+                <span>Dison</span>
+                <span>Limbourg</span>
+                <span>Theux</span>
+                <span>Jalhay</span>
+                <span>Spa</span>
+                <span>Battice</span>
+                <span>Herve</span>
+                <span>Aubel</span>
+                <span>Eupen</span>
+                <span>Baelen</span>
+                <span>Welkenraedt</span>
+                <span>Olne</span>
+                <span>Fléron</span>
+                <span>Trooz</span>
+                <span>Chaudfontaine</span>
+            </div>
+        </div>
+        <div>
+            <h4 class="text-lg font-bold mb-4">Contact Direct</h4>
+            <p class="text-blue-200 mb-2"><i class="fas fa-envelope text-yellow-500 mr-2"></i> info@timberwood.be</p>
+            <p class="text-2xl font-bold text-yellow-500 italic"><i class="fas fa-phone-alt mr-2"></i> 0495 42 41 15</p>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 pt-8 text-center text-blue-400 text-sm">
+        &copy; 2026 Michel Seret - Chauffagiste. Tous droits réservés. | Mentions Légales
+    </div>
+</footer>
+</body>
+</html>
