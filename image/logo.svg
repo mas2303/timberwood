@@ -3,6 +3,12 @@
   <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
   <defs>
     <style>
+      @font-face {
+        font-family: 'James Fajardo';
+        font-style: normal;
+        font-weight: 400;
+        src: url('https://fonts.cdnfonts.com/s/9328/James_Fajardo.woff') format('woff');
+      }
       .st0 {
         letter-spacing: .04em;
       }
@@ -20,7 +26,7 @@
       }
 
       .st4, .st5 {
-        font-family: JamesFajardo, 'James Fajardo';
+        font-family: 'James Fajardo', sans-serif;
       }
 
       .st3 {
